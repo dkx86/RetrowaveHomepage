@@ -1,3 +1,7 @@
+/*
+@author Jack Philippi
+@description @NewRetroWave - I don't own any rights to the NewRetroWave logo or name 👽. Sorry it plays up on Mozilla. I'll fix it when I have a minute!
+*/
   
 @font-face {
   font-family: OutRun;
@@ -18,14 +22,13 @@ body {
 	perspective: 180px;
 	perspective-origin: 50% 35%;
 }
-
-
+ 
 .wrapper {
-	z-index: -100;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+  z-index: -100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
  
 .inner-wrapper {
@@ -39,17 +42,16 @@ body {
 }
  
 .landscape {
-	position: absolute;
-	width: 200%;
-	left: -50%;
-	height: 130%;
-
-	background-image: -webkit-linear-gradient(top, #CF33D9 2px, transparent 2px), -webkit-linear-gradient(left, #CF33D9 2px, transparent 2px);
-	background-size: 50px 50px, 80px 80px;
-	background-position: -1px -1px, -1px -1px;
-	transform: rotateX(85deg);
-	/* Warning! It inreases CPU usage!*/
-	/* animation: moveUp 1s infinite linear;  */
+  position: absolute;
+  width: 200%;
+  left: -50%;
+  height: 130%;
+  
+  background-image: -webkit-linear-gradient(top, #CF33D9 2px, transparent 2px), -webkit-linear-gradient(left, #CF33D9 2px, transparent 2px);
+  background-size: 50px 50px, 80px 80px;
+  background-position: -1px -1px, -1px -1px;
+  transform: rotateX(85deg);
+ /* animation: moveUp 1s infinite linear; */
 }
 
 
@@ -71,22 +73,23 @@ body {
  
  
 .neon {
-	z-index: 100;
-	font-size: 5.2em;
-	color: transparent;
-	text-transform: uppercase;
-	letter-spacing: -10px;
-	transform: rotate(-10deg) skew(-20deg);
-	-webkit-text-stroke: 2px #F4C6F4;
-	margin-bottom: -36px;
+  z-index: 100;
+  font-family: "OutRun", "Helvetica", sans-serif;
+  font-size: 5.2em;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+  transform: rotate(-10deg) skew(-20deg);
+  -webkit-text-stroke: 2px #F4C6F4;
+  margin-bottom: -36px;
 
 }
 
 .neon:hover {
-	font-size: 5.5em;
-	letter-spacing: -5px;
-	-webkit-text-stroke: 4px #F4C6F4;
-	animation: glow_wave 2.5s linear infinite;
+  font-size: 5.5em;
+  letter-spacing: -5px;
+  -webkit-text-stroke: 4px #F4C6F4;
+    animation: glow_wave 2.5s linear infinite;
    
 }
 
@@ -118,21 +121,24 @@ body {
 
  
 .wave {
-	z-index: 100;
-	font-family: "OutRun", "Helvetica", sans-serif;
-	font-size: 3.8em;
-	color: #FA26F7;
-	text-transform: uppercase;
-	letter-spacing: -10px;
-	transform: rotate(-3deg) skew(-10deg);
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #000;
+  z-index: 100;
+  font-family: "OutRun", "Helvetica", sans-serif;
+  font-size: 3.8em;
+  color: #FA26F7;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+  transform: rotate(-3deg) skew(-10deg);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  
+  
 }
 
 .wave:hover {
 	font-size: 4.2em;
 	letter-spacing: -5px;
-	animation: glow_wave 2.5s linear infinite; 
+	/* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FA26F7, 0 0 30px #FA26F7, 0 0 40px #FA26F7, 0 0 55px #FA26F7, 0 0 75px #FA26F7; */
+	 animation: glow_wave 2.5s linear infinite; 
 }
 
 
@@ -146,24 +152,18 @@ body {
 
 
 .avatar-neon {
-	width: 150px;
-	height: 150px;
-	margin-bottom:15px;
-	margin-top:25px;
-	border-radius: 50%;
-	box-shadow:
-		inset 0 0 50px #fff,
-		inset 20px 0 80px #f0f,
-		inset -20px 0 80px #0ff,
-		inset 20px 0 200px #f0f,
-		inset -20px 0 200px #0ff,
-		0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-}
-
-.sns-neon-button {
-	width: 48px;
-	height: 48px;
-	filter:  drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #FA26F7) drop-shadow(0 0 30px #FA26F7);
+  width: 150px;
+  height: 150px;
+  margin-bottom:15px;
+  margin-top:25px;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 200px #f0f,
+    inset -20px 0 200px #0ff,
+    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 
 
@@ -175,34 +175,34 @@ body {
 	}
 	 	 
 	.neon {
-		font-size: 5.2em;
-		letter-spacing: -5px;
+	  font-size: 5.2em;
+	  letter-spacing: -10px;
 	}
 
 	.neon:hover {
-		font-size: 5.5em;
-		letter-spacing: -2px;		
+	  font-size: 5.5em;
+	  letter-spacing: -5px;	   
 	}
 
 	.retro {
 		font-size: 5.5em;
-		letter-spacing: -5px;
+		letter-spacing: -10px;
 	}
 
 	.retro:hover {
+		z-index: 100;
 		font-size: 5.8em;
-		letter-spacing: -2px;	   
 	}
 
 	 
 	.wave {
-		font-size: 3.8em;
-		letter-spacing: -5px;
+	  z-index: 100;
+	  font-size: 3.8em;
 	}
 
 	.wave:hover {
 		font-size: 4.2em;
-		letter-spacing: -2px;
+		letter-spacing: -5px;
 	}
 }
 
@@ -267,23 +267,23 @@ body {
 	}
 	
 	.avatar-neon {
-		width: 120px;
-		height: 120px;
-		margin-bottom:5px;
-		margin-top:10px;
+	  width: 120px;
+	  height: 120px;
+	  margin-bottom:5px;
+	  margin-top:10px;
 	}
 	
    .neon {	  
-		font-size: 3.9em;
-		letter-spacing: -4px;
-		margin-bottom: -28px;
+	  font-size: 3.9em;
+	  letter-spacing: -4px;
+	  margin-bottom: -28px;
 	}
 
 	.neon:hover, .neon:active {
-		font-size: 4.2em;
-		letter-spacing: -2px;
-		filter:  drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #FA26F7) drop-shadow(0 0 30px #FA26F7);
-		animation-name:none;
+	  font-size: 4.2em;
+	  letter-spacing: -2px;
+	  filter:  drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #FA26F7) drop-shadow(0 0 30px #FA26F7);
+	  animation-name:none;
 	}
 
 	.retro {
@@ -300,8 +300,8 @@ body {
 	}
 	
 	.wave {
-		font-size: 2.3em;	  
-		letter-spacing: -4px;
+	  font-size: 2.3em;	  
+	  letter-spacing: -4px;
 	}
 
 	.wave:hover {
@@ -323,25 +323,39 @@ body {
 
 
 
-@keyframes moveUp{
-	0% {
-		background-position: -1px -1px, -1px -1px;
-	}
-	100% {
-		background-position: -50px -50px, -1px -1px;
-	}
+  @keyframes moveUp{
+  0% {
+    background-position: -1px -1px, -1px -1px;
+  }
+  100% {
+    background-position: -50px -50px, -1px -1px;
+  }
 }  
  
+ @keyframes glow {
+  0% {
+	  filter: drop-shadow(0 0 10px #CF33D9) drop-shadow(0 0 12px #CF33D9) drop-shadow(0 0 20px #FA26F7);
+  }
+  
+  50% {
+    filter: drop-shadow(0 0 5px #CF33D9) drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 10px #FA26F7);
+  }
+  
+  100% {
+    filter: drop-shadow(0 0 10px #CF33D9) drop-shadow(0 0 12px #CF33D9) drop-shadow(0 0 20px #FA26F7);
+  }
+} 
+
 @keyframes glow_wave {
-	0% {
-		filter:  drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #FA26F7) drop-shadow(0 0 30px #FA26F7);
-	}
-
-	50% {
-		filter:  drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #FA26F7) drop-shadow(0 0 15px #FA26F7); 
-	}
-
-	100% {
-		filter:  drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #FA26F7) drop-shadow(0 0 30px #FA26F7); 
-	}
+  0% {
+	  filter:  drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #FA26F7) drop-shadow(0 0 30px #FA26F7);
+  }
+  
+  50% {
+	filter:  drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #FA26F7) drop-shadow(0 0 15px #FA26F7); 
+  }
+  
+  100% {
+	filter:  drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #FA26F7) drop-shadow(0 0 30px #FA26F7); 
+  }
 } 
